@@ -1,0 +1,246 @@
+$color-pimary:#F7C9F3 ;
+$color-secundary: #4180F6 ;
+$color-background:#FFF4FD;
+$color_fuente:#ffff;
+$color_backgroundPanel:#E6E6E6;
+$tamaño_fuente:12px;
+$fuente_titulos:"Chakra Petch";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    font-family: $fuente_titulos;
+}
+%titulos{
+    height:1.4%; 
+    width: 99.9%;
+    background-image: linear-gradient(270deg, #F7C9F3 , #4180F6 );
+    color:$color_fuente;
+}
+body{
+    background-color: $color-background;
+    
+    .titulos{
+        @extend %titulos;
+        margin: auto;
+        margin-bottom: 1px;
+        box-shadow:0 1px 0 0 #110038;
+    }
+    .contenedor_p{
+        width: 83.33%;
+        margin: auto;
+    }
+    header{
+        div{
+            font-size: $tamaño_fuente; 
+        }
+        #menu{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2.4%;
+            margin-bottom: 2.4%;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                li{
+                    margin-right: 16px;
+                }
+                #eligirTema{
+                    #menuTema{
+                        margin: auto;
+                        display: block;
+                        padding: 5px 0px 5px 15px;    
+                        background: #E6E6E6;
+                        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                        li{
+                            padding-bottom: 5px;
+                            .botonTema{
+                                padding: 4px;
+                                display: block;
+                                width: 90%;
+                                margin: auto;
+                                background: #F0F0F0;
+                                border: 1px solid #808080;
+                                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                                &:hover{
+                                    background: #FFF4FD;
+                                }
+                            }
+                        }
+                    }
+                }
+                .boton{ 
+                    display: block;
+                    width: 100%;
+                    padding: 9px 26px; 
+                    text-decoration: none;
+                    border: 1px solid  #110038;
+                    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                    background-color:$color-pimary;
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                #misGift{
+                    display: block;
+                    padding: 9px 0px 9px 1px; 
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 18px;
+                    
+                }
+            }
+        }
+    }
+    main{
+        .panelBuscar{
+            background: #E6E6E6;
+            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            width: 82.8%;
+            margin: auto;
+            padding: 3px;
+            //margin-bottom: 3%;
+            .titulo_seg{
+                @extend %titulos;
+                width: 100%;
+                font-weight: bold;
+                padding-left: 0.2%;
+            }
+            #buscarForm{
+                display: flex;
+                align-items: center;
+                #barraBuscar{
+                    width: 85%;
+                    margin: 16px;
+                    padding: 6px;
+                    background: #FFFFFF;
+                    border: 1px solid #979797;
+                    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+                }
+                #botonBuscar{
+                    width: 10%;
+                    height: 36px;
+                    padding: 6px 0px;
+                    font-size: 16px;
+                    line-height: 18px;
+                    background:$color-pimary;
+                    border: 1px solid #110038; box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; 
+                    &:disabled{
+                        background:none;
+                        border: none;
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        #panelsugeBusq{
+            padding:17px 129px 16px 16px;
+            .sugerenciaBusq{  
+                width: 92.5%;
+                padding: 6px 0px 6px 15px;
+                border: 1px solid #808080;
+                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                margin-bottom: 10px;
+                &:hover{
+                    border: 1px dotted #110038;
+                    background: #DBDBDB;
+                }
+            }
+        }
+        
+        .subTitulo{
+            width: 100%;
+            background: #FFFAFE;
+            border: 1px solid #E6BBE2;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+            padding: 0.35%;
+            margin-bottom: 2%;
+        }
+        .panelSugerencias{
+            margin-top: 3%;
+            .contenedorSugerencias{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2%;
+                .sugerencia{
+                    width: 24.5%;
+                    height: 313px;
+                    background: #E6E6E6;
+                    padding: 3px;
+                    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                    .menu{
+                        @extend %titulos;
+                        display: flex;
+                        justify-content: space-between;
+                        height: auto;
+                    }
+                    .gifSug{
+                        width: 100%;
+                        height: 280px;
+                        z-index: 0;
+                    }
+                    .botonAzul{
+                        padding: 3px;
+                        background: #4180F6;
+                        color: #FFFFFF;
+                        position: relative;
+                        z-index: 100;
+                        top: -15%;
+                        left: 1.5%;
+                        &:hover{          
+                            border: 1px dotted #110038;
+                        }
+                    }
+                }
+            }
+        }
+        //boton azul
+        .botonAzul{
+            padding: 0.5% 0.7%;
+            background: #4180F6;
+            color: #FFFFFF;
+        }
+        //hedear gift
+        .panelTendencias{
+            #resultados{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .conteGif{
+                    display: block;
+                    margin: 10px 0px;
+                    img{
+                        padding: 2px;
+                        width: 100%;
+                        height:18rem;
+                        z-index: 0;
+                        &:hover{
+                            background: #E6E6E6;
+                            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                        }
+                        &:hover~.foot{
+                            display: block;
+                        }
+                    }
+                    .foot{
+                        @extend %titulos;
+                        display: none;
+                        height: 24px;
+                        width: 99.2%;
+                        margin: auto;
+                        position: relative;
+                        top:-9.6%;
+                        z-index: 100;
+                    }
+                }
+                
+            }
+        }
+    }
+}

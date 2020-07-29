@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../styles/styleCrearGif.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="titulos">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas:100000000</p>
+        </div>
+        <div id="asf">
+            <div class="contenedor_p">
+                <img id="backHome" src="../images/assets/arrow.svg" alt="back">
+                <img src="../images/assets/gifOF_logo.png" alt="Logo">   
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor_p">
+            <div class="panelCrearGift">
+                <div class="headerGift"><p>Crear Guifos</p></div>
+                <div class="mainCrearGif">
+                    <div class="tituloMain">
+                        <img src="../images/assets/window_img.png alt="window">
+                        <p><b>podrás crear tus propios guifos</b></p>
+                    </div>
+                    <div class="textMain">
+                        <p>
+                            Crear tu <i><b>guifo</b></i>> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:<br>
+                        <b>1)</b> Dar permisos de acceso a la cámara (Restricción a uso)<br>
+                        <b>2)</b> Capturar tu momento en gif<br>
+                        <b>3)</b> Revisar el momento<br>
+                        <b>4)</b> Listo para subir y compartir!<br>
+                        ¿Quieres comenzar a crear tu <i><b>guifo</b></i> ahora?
+                        </p>
+                        <div id="botones">
+                            <button id="botonCancelar" class="boton">Cancelar</button>
+                            <button id="botonComenzar" class="boton">Comenzar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainVideo" style="display: none;">
+                    <div class="marcoVideo">
+                        <video id="video"></video>
+                        <img id="videoGuardado"  style="display: none;" src="../giphy.gif" alt="gifCreado">
+                        <div class="panelCarga" style="display: none;">
+                            <div class="carga">
+                                <img src="../images/assets/" alt="iconoCargando">
+                                <p><b>Procesando el gif…</b></p>
+                            </div>
+                            <div class="carga">
+                                <div>barra de carga</div>
+                                <p>Tiempo restante: <u>Lo necesario</u> para salvar esta compañía</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panelSubida" style="display: none;">
+                            <img  id="giftWind"  src="../giphy.gif" alt="gifSubido">   
+                        <div class="carga">
+                            <p class="negrilla">Gif creado con éxito</p>
+                            <button class="boton" id="botonCopiarGif" >Copiar Enlace</button>
+                            <button class="boton" >Descargar Gif</button>
+                        </div>
+                    </div>
+                    <div id="panelGrabar">
+                        <button id="finalGrab" class="boton"  style="display: none;">Listo</button>
+                        <button id="CancelarSubida" class="boton"  style="display: none;">Cancelar</button>
+                        <div id="botonesRepertirGrab" style="display: none;">
+                            <button id="repetirGrab" class="boton" >Repetir Captura</button>
+                            <button id="subirGrab" class="boton">Subir Guifo</button>
+                        </div>
+                        <button class="boton" id="botonGrabar"><span class="botonTexto">Grabar</span></button>
+                        <button id="botonPausar" style="display: none;"><span class="botonTexto">Listo</span></button>
+                            <div id="timer" class="subTitulo" style="display: none;">
+                                <p>--:--</p>  
+                            </div> 
+                    </div>         
+                </div>
+            </div>    
+            <div class="subTitulo">
+                <p>Mis guifos</p> 
+            </div>
+            <div id="misGif">
+            </div>
+        </div>
+        <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+        <script src="../script/videoRecord.js"></script>
+    </main>
+</body>
+</html>

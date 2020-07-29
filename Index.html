@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet"> 
+    <link id="tema" rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class="titulos">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas:100000000</p>
+        </div>
+        <div class="contenedor_p">
+            <div id="menu">
+                <img id="logoPrincipal" src="./images/assets/gifOF_logo.png" alt="Logo de gif.os">
+                <ul>
+                    <li><a class="boton" href="./pages/crearGif.html">Crear Guifos</a></li>
+                    <Li id="eligirTema">
+                        <div id="botonTemas"> 
+                            <button class="boton">Elegir tema <img src="./images/assets/dropdown.svg" alt=""></button> 
+                        </div>
+                        <ul id="menuTema" style="display:none;">
+                            <li><button id="sailorDay" class="botonTema">Sailor-Day</button></li>
+                            <li><button id="sailorNight" class="botonTema">Sailor-Night</button></li>
+                        </ul>
+                    </Li>
+                    <li><a id="misGift" href="./pages/crearGif.html">Mis Guifos</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="buscar">
+            <div class="panelBuscar">
+                <div class="titulo_seg">
+                    <p>buscar</p> 
+                </div>
+                <div>
+                    <form id="buscarForm">
+                        <input type="text" id="barraBuscar" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                        <button id="botonBuscar" type="submit"> <img id="lupa" src="./images/assets/lupa.svg" alt="imagen de lupa"> Buscar</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="panelBuscar" id="panelsugeBusq" style="display: none;">
+                <p id="psug1" class="sugerenciaBusq">man</p>
+                <p id="psug2" class="sugerenciaBusq">cat</p>
+                <p id="psug3" class="sugerenciaBusq">dog</p>
+            </div>
+        </div>
+        <div class="panelSugerencias">
+            <div class="contenedor_p">
+                <div class="subTitulo">
+                    <p>Hoy te sugerimos:</p>
+                </div>  
+                <div class="contenedorSugerencias">
+                    <div class="sugerencia">
+                        <div class="menu"><p class="tituloSug"> </p><img src="./images/assets/button3.svg" alt="X"></div>
+                        
+                        <button id="sug1" class="botonAzul"  value="Jonathan vanness" >ver mas</button>
+                    </div>
+                    <div class="sugerencia">
+                        <div class="menu"><p class="tituloSug"> </p><img src="./images/assets/button3.svg" alt="X"></div>
+                        
+                        <button id="sug2" class="botonAzul"  value="Sailor Mercury" >ver mas</button>
+                    </div>
+                    <div class="sugerencia">
+                        <div class="menu"><p class="tituloSug"> </p><img src="./images/assets/button3.svg" alt="X"></div>
+                        
+                        <button id="sug3" class="botonAzul"  value="Fab five" >ver mas</button>
+                    </div>
+                    <div class="sugerencia">
+                        <div class="menu"><p class="tituloSug"> </p><img src="./images/assets/button3.svg" alt="X"></div>
+                        
+                        <button id="sug4" class="botonAzul"  value="unicorns and rainbows" >ver mas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panelTendencias">
+            <div class="contenedor_p">
+                <div class="subTitulo">
+                    <p id="tituloBusq">Tendencias:</p>
+                </div>
+                <div id="resultados">
+                </div>
+            </div>
+        </div>
+        <script src="./script/script.js">
+        </script>
+    </main>
 </body>
 </html>
